@@ -1,0 +1,307 @@
+/* transition,transform,skew,translate,scale */
+*{
+   
+   margin: 20px 0 0 50px;
+}
+/*transition*/
+.firstDiv{
+  
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition: width 3s cubic-bezier(0,1,1,0);
+    /*transition-timing-function:cubic-bezier(0,1,1,0);*/
+  
+}
+
+ 
+.firstDiv:hover{
+    width:300px;
+   
+}
+/*------- Transform --------*/
+.secondDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+.secondDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform: rotate(70deg);
+}
+/*-------Translate  --------*/
+.thirdDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+.thirdDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform: translate(50px,0);
+}
+/*-------Skew  --------*/
+.fourthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+.fourthDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:skew(50deg);
+}
+/*------- scale --------*/
+.fifthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+.fifthDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:scale(1,0.5);
+}
+/*------- Transition and transform--------*/
+.sixthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.sixthDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:rotate(70deg);
+}
+/*------- Transition and translate--------*/
+.seventhDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.seventhDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:translate(50px,0);
+}
+/*------- Transition and Skew--------*/
+.eigthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.eigthDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:skew(50deg);
+}
+/*------- Transition and scale--------*/
+.ninethDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.ninethDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:scale(1,0.5);
+}
+/*------- Transition , translate and skew--------*/
+.tenthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.tenthDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:translate(50px,0) skew(50deg);
+}
+/*------- Transition , translate and scale--------*/
+.eleventhDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.eleventhDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform:translate(50px,0) scale(1,0.5);
+}
+/*------- Transition ,  skew and scale--------*/
+.twelvethDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transition:3s;
+}
+.twelvethDiv:hover{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    transform: skew(50deg) scale(1,0.5);
+}
+/*------- Animation color change--------*/
+.thirteenthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+   animation:1s 5s colorChange  infinite;
+  
+}
+
+@keyframes colorChange {
+    0%  {background-color: rgb(0, 255, 242);}
+    50%  {background-color: yellow;}
+    70%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/*------- 3d --------*/
+div.pres{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    perspective: 100px;
+    -webkit-perspective: 100px;
+}
+.fourteenthDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    0%{transform:rotateX(0deg);
+    background-color: red;
+    }
+    50%{transform:rotateX(180deg);
+        background-color: green;
+        
+    }
+    100%{transform:rotateX(359deg);
+        background-color: blue;
+    }
+}
+
+.dropshadow:hover{
+    border-radius: 50%;
+  filter:brightness(150%)  sepia(100%);
+    /*filter:;
+     filter: invert(100%);
+     filter: hue-rotate(250deg);
+    filter: grayscale(100%);
+    filter:drop-shadow(5px 9px 2px rgb(99, 99, 212));
+    */
+}
+
+.sixteenthDiv{
+
+        width: 20px;
+        height: 20px;
+       
+        animation: mov1 5s infinite linear;
+   
+}
+
+@keyframes mov1 {
+    0%  {background-color: red;
+        transform:translate(50px,58px);
+    }
+    25%  {background-color: yellow;
+        transform:translate(100px,108px);}
+    50%  {background-color: blue;
+        transform:translate(50px,158px);}
+    75% {background-color: green;
+        transform:translate(0px,108px);}
+        100% {background-color: green;
+            transform:translate(50px,58px);}
+}
+.seventeenthDiv{
+    width: 20px;
+    height: 20px;
+    animation: mov2 5s infinite linear;
+ 
+}
+@keyframes mov2 {
+   
+   
+    0%  {background-color: yellow;
+        transform:translate(100px,58px);}
+    25%  {background-color: blue;
+        transform:translate(50px,108px);}
+    50% {background-color: green;
+        transform:translate(0px,58px);}
+        75% {background-color: red;
+            transform:translate(50px,0px);}
+            100%  {background-color: red;
+                transform:translate(100px,58px);
+            }
+}
+
+.eighteenthDiv{
+    width: 20px;
+    height: 20px;
+    animation: mov3 5s infinite linear;
+
+
+}
+@keyframes mov3 {
+   
+    0%  {background-color: blue;
+        transform:translate(50px,58px);
+    }
+    25%  {background-color: green;
+        transform:translate(0px,-8px);}
+    50%  {background-color: red;
+        transform:translate(50px,-58px);}
+    75% {background-color: yellow;
+        transform:translate(100px,-8px);}
+        100% {background-color: yellow;
+            transform:translate(50px,58px);}
+}
+
+.nineteenthDiv{
+    width: 20px;
+    height: 20px;
+    animation: mov4 5s infinite linear;
+
+}
+@keyframes mov4 {
+   
+    0%  {background-color:green;
+        transform:translate(0px,-56px);
+    }
+    25%  {background-color: red;
+        transform:translate(50px,-116px);}
+    50%  {background-color: yellow;
+        transform:translate(100px,-56px);}
+    75% {background-color: blue;
+        transform:translate(50px,-6px);}
+        100% {background-color: blue;
+            transform:translate(0,-56px);}
+}
+
+
+
+
+
+
+
