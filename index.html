@@ -1,5 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ad35b2ce7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navImg {
+            display: flex;
+        }
+
+        .icon {
+            display: flex;
+            width: 45px;
+            height: 45px;
+            align-self: center;
+            justify-content: center;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+        #icon {
+            align-self: center;
+
+        }
+
+        .icon1 {
+
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+
+        }
+
+        #icon1 {
+            align-self: center;
+        }
+
+        .balance {
+            color: rgba(137, 43, 226, 0.89);
+
+        }
+
+        .infoContainer {
+            height: 75vh;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(255, 196, 0);
+            background-image: linear-gradient(to right, rgb(185, 9, 255), #ff8800);
+        }
+
+        .devInfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .devPic img {
+            height: 70vh;
+            width: 40vw;
+        }
+
+        .hello {
+            font-size: 38px;
+
+        }
+
+        .name {
+            font-size: 28px;
+            margin-top: -12px;
+
+        }
+
+        .about {
+            font-size: 18px;
+            margin-top: -4px;
+
+
+        }
+
+        .programming {
+            animation: 5s textChange1 infinite;
+        }
+
+        @keyframes textChange1 {
+            0% {
+                opacity: 100%;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .games {
+            animation: 5s textChange2 infinite;
+
+        }
+
+        @keyframes textChange2 {
+
+            0% {
+                opacity: 0;
+
+            }
+
+            33% {
+                opacity: 100%;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+        }
+
+        .movies {
+            animation: 5s textChange3 infinite;
+
+
+        }
+
+        @keyframes textChange3 {
+
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .aboutMe {
+            display: flex;
+            background-color: red;
+            flex-direction: column;
+        }
+        .intro{
+            height: 75vh;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(255, 196, 0);
+        }
+        .devImage{
+            height: 200px;
+            width: 300px;
+            background-color: #ff8800;
+
+        }
+        .introduction{
+
+        }
+
+
+
+
+
+
+
+
+        @media screen and (max-width:237px) {
+            .infoContainer {
+                height: 100vh;
+            }
+        }
+
+        @media screen and (min-width:398px) {
+            .devPic img {
+                height: 70vh;
+                width: 32vw;
+            }
+        }
+
+        @media screen and (min-width:546px) {
+            .devPic img {
+                height: 70vh;
+                width: 26vw;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .nav {
+                background-color: rgba(137, 43, 226, 0.89);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 10px rgba(22, 21, 21, 0.575);
+
+            }
+
+
+            .icon {
+                margin: auto;
+            }
+
+
+            .icon1 {
+                display: flex;
+
+            }
+
+            #nav1 {
+                display: none;
+                position: fixed;
+                top: 50px;
+                left: 0;
+                right: 0;
+
+            }
+
+            #nav1 ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            #nav1 ul li {
+
+                padding: 5px;
+                margin: 1px;
+                border: 1px solid black;
+                border-radius: 1px;
+                color: white;
+                list-style-type: none;
+                background-image: linear-gradient(to right, rgb(185, 9, 255, 0.89), #ff8800ec);
+
+            }
+
+            #nav {
+                display: none;
+            }
+
+            .infoContainer {
+                flex-wrap: wrap;
+
+            }
+
+            .hello {
+                font-size: 30px;
+
+            }
+
+            .name {
+                font-size: 20px;
+
+            }
+
+            .about {
+                font-size: 15px;
+
+
+            }
+
+        }
+
+
+        @media screen and (min-width:768px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                background-color: rgba(137, 43, 226, 0.89);
+                flex-direction: row;
+                box-shadow: 0 0 10px rgba(22, 21, 21, 0.575);
+
+            }
+
+            div ul {
+                display: flex;
+                flex-direction: row;
+                margin-left: 50px;
+            }
+
+            div ul li {
+                font-weight: 700;
+                list-style-type: none;
+                color: white;
+                margin: 10px 50px 0 0;
+                font-size: 20px;
+            }
+
+            #nav1 {
+                display: none;
+            }
+            .devPic img {
+                height: 70vh;
+                width: 22vw;
+            }
+        }
+
+       
+        @media screen and (min-width:1024px) {
+            .devPic img {
+                height: 70vh;
+                width: 15vw;
+            }
+        }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navImg">
+
+            <div id="icon1" class="icon1">
+                <i id="icon1" class="fa-solid fa-bars" style="font-size:20px;color:white"></i>
+            </div>
+            <div class="icon">
+                <a class="nav-link" href="#nav">
+                    <img src="https://i.ibb.co/GHVGxq7/Picsart-22-10-04-18-51-25-914.png" alt="" class="icon">
+                </a>
+            </div>
+            <div class="balance">Pranjit</div>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav1">
+        <ul class="nav1">
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="infoContainer">
+            <div class="devPic"><img src="https://i.ibb.co/SKf3NWh/me1.png" alt="">
+            </div>
+            <div class="devInfo" style="color:white ">
+                <div class="hello"> Hi! I am </div>
+                <div class="name">Pranjit Shrestha</div>
+                <div class="about">I love <div class="programming"> Programming</div>
+                    <div class="games"> Playing video
+                        games</div>
+                    <div class="movies"> Watching movies.</div>
+                    <div class="projects"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="aboutMe">
+                <div class="abt"> About Me </div>
+                <div class="whoAmI">Who Am I??</div>
+            </div>
+            <div class="intro">
+                <div class="devImage"></div>
+                <div class="introduction">I am <b>Pranjit Shrestha </b> from the small town(Khandbari) of Sankhuwasabha, Nepal.
+                    I am a full stack developer having the experience in HTML, CSS, JavaScript, SQL, Jquery, Bootstrap. I have the knowledge of some of the famous programming language like C, PHP, C++, Python  </div>
+            </div>
+            <div class=""></div>
+        </div>
+
+
+
+
+        <script>
+            $('#icon1').click(function () {
+                $('#nav1').slideToggle(500)
+
+            })
+        </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
