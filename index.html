@@ -8,345 +8,21 @@
     <meta name="description" content="Hello everyone welcome to my personal website...">
     <meta property="og:type" content="profile">
     <meta property="og:image" content="img/profile.jpg">
-<link rel="icon" href="img/profile.jpg" >
- <meta name="keywords" content="Pranjit shrestha,Pranjit,Pranjeet shrestha">
-    <meta name=author content="Pranjit Shrestha" >
+    <link rel="icon" href="img/profile.jpg">
+    <meta name="keywords" content="Pranjit shrestha,Pranjit,Pranjeet shrestha">
+    <meta name=author content="Pranjit Shrestha">
     <script src="https://kit.fontawesome.com/6ad35b2ce7.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="C:\Portfolio\style.css">
 
-    <title>Portfolio</title>
+    <title>Pranjit Shrestha</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .navImg {
-            display: flex;
-        }
-
-        .icon {
-            display: flex;
-            width: 45px;
-            height: 45px;
-            align-self: center;
-            justify-content: center;
-            margin-left: 10px;
-            border-radius: 50%;
-        }
-
-        #icon {
-            align-self: center;
-
-        }
-
-        .icon1 {
-
-            display: none;
-            width: 50px;
-            height: 50px;
-            margin-left: 10px;
-
-        }
-
-        #icon1 {
-            align-self: center;
-        }
-
-        .balance {
-            color: rgba(137, 43, 226, 0.89);
-
-        }
-
-        .infoContainer {
-            height: 75vh;
-            display: flex;
-            justify-content: space-evenly;
-            background-color: rgb(255, 196, 0);
-            background-image: linear-gradient(to right, rgb(185, 9, 255), #ff8800);
-        }
-
-        .devInfo {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .devPic img {
-            height: 70vh;
-            width: 40vw;
-        }
-
-        .hello {
-            font-size: 38px;
-
-        }
-
-        .name {
-            font-size: 28px;
-            margin-top: -12px;
-
-        }
-
-        .about {
-            font-size: 18px;
-            margin-top: -4px;
-
-
-        }
-
-        .programming {
-            animation: 5s textChange1 infinite;
-        }
-
-        @keyframes textChange1 {
-            0% {
-                opacity: 100%;
-            }
-
-            33% {
-                opacity: 0;
-            }
-
-            66% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 100%;
-            }
-        }
-
-        .games {
-            animation: 5s textChange2 infinite;
-
-        }
-
-        @keyframes textChange2 {
-
-            0% {
-                opacity: 0;
-
-            }
-
-            33% {
-                opacity: 100%;
-            }
-
-            66% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-
-        }
-
-        .movies {
-            animation: 5s textChange3 infinite;
-
-
-        }
-
-        @keyframes textChange3 {
-
-            0% {
-                opacity: 0;
-            }
-
-            33% {
-                opacity: 0;
-            }
-
-            66% {
-                opacity: 100%;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        .aboutMe {
-            display: flex;
-            background-color: red;
-            flex-direction: column;
-        }
-        .intro{
-            height: 75vh;
-            display: flex;
-            justify-content: space-evenly;
-            background-color: rgb(255, 196, 0);
-        }
-        .devImage{
-            height: 200px;
-            width: 300px;
-            background-color: #ff8800;
-
-        }
-        .introduction{
-
-        }
-
-
-
-
-
-
-
-
-        @media screen and (max-width:237px) {
-            .infoContainer {
-                height: 100vh;
-            }
-        }
-
-        @media screen and (min-width:398px) {
-            .devPic img {
-                height: 70vh;
-                width: 32vw;
-            }
-        }
-
-        @media screen and (min-width:546px) {
-            .devPic img {
-                height: 70vh;
-                width: 26vw;
-            }
-        }
-
-        @media screen and (max-width:768px) {
-            .nav {
-                background-color: rgba(137, 43, 226, 0.89);
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                box-shadow: 0 0 10px rgba(22, 21, 21, 0.575);
-
-            }
-
-
-            .icon {
-                margin: auto;
-            }
-
-
-            .icon1 {
-                display: flex;
-
-            }
-
-            #nav1 {
-                display: none;
-                position: fixed;
-                top: 50px;
-                left: 0;
-                right: 0;
-
-            }
-
-            #nav1 ul {
-                margin: 0;
-                padding: 0;
-            }
-
-            #nav1 ul li {
-
-                padding: 5px;
-                margin: 1px;
-                border: 1px solid black;
-                border-radius: 1px;
-                color: white;
-                list-style-type: none;
-                background-image: linear-gradient(to right, rgb(185, 9, 255, 0.89), #ff8800ec);
-
-            }
-
-            #nav {
-                display: none;
-            }
-
-            .infoContainer {
-                flex-wrap: wrap;
-
-            }
-
-            .hello {
-                font-size: 30px;
-
-            }
-
-            .name {
-                font-size: 20px;
-
-            }
-
-            .about {
-                font-size: 15px;
-
-
-            }
-
-        }
-
-
-        @media screen and (min-width:768px) {
-            .nav {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                display: flex;
-                background-color: rgba(137, 43, 226, 0.89);
-                flex-direction: row;
-                box-shadow: 0 0 10px rgba(22, 21, 21, 0.575);
-
-            }
-
-            div ul {
-                display: flex;
-                flex-direction: row;
-                margin-left: 50px;
-            }
-
-            div ul li {
-                font-weight: 700;
-                list-style-type: none;
-                color: white;
-                margin: 10px 50px 0 0;
-                font-size: 20px;
-            }
-
-            #nav1 {
-                display: none;
-            }
-            .devPic img {
-                height: 70vh;
-                width: 22vw;
-            }
-        }
-
-       
-        @media screen and (min-width:1024px) {
-            .devPic img {
-                height: 70vh;
-                width: 15vw;
-            }
-        }
-
-
-
-        
-    </style>
 </head>
 
-<body>
+<body id="home">
     <div class="nav">
         <div class="navImg">
 
@@ -354,82 +30,229 @@
                 <i id="icon1" class="fa-solid fa-bars" style="font-size:20px;color:white"></i>
             </div>
             <div class="icon">
-                <a class="nav-link" href="#nav">
-                    <img src="https://i.ibb.co/GHVGxq7/Picsart-22-10-04-18-51-25-914.png" alt="" class="icon">
+                <a class="nav-link" href="#home">
+                    <img src="https://i.ibb.co/GHVGxq7/Picsart-22-10-04-18-51-25-914.png" alt="Logo" class="icon">
                 </a>
             </div>
             <div class="balance">Pranjit</div>
         </div>
         <div id="nav">
             <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Contact</li>
+                <li> <a href="#home">Home </a></li>
+                <li> <a href="#aboutMe">About Me</a></li>
+                <li><a href="#contact">Contact</a> </li>
             </ul>
         </div>
     </div>
     <div id="nav1">
         <ul class="nav1">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Contact</li>
+            <li> <a href="#home">Home </a></li>
+            <li> <a href="#aboutMe">About Me</a></li>
+            <li><a href="#contact">Contact</a> </li>
         </ul>
     </div>
     <div class="main">
         <div class="infoContainer">
-            <div class="devPic"><img src="https://i.ibb.co/SKf3NWh/me1.png" alt="">
+            <div class="devPic"><img src="https://i.ibb.co/SKf3NWh/me1.png" alt="Pranjit">
             </div>
             <div class="devInfo" style="color:white ">
                 <div class="hello"> Hi! I am </div>
                 <div class="name">Pranjit Shrestha</div>
-                <div class="about">I love <div class="programming"> Programming</div>
+                <div class="about">I love <div class="programming"> Programming.</div>
                     <div class="games"> Playing video
-                        games</div>
+                        games.</div>
                     <div class="movies"> Watching movies.</div>
                     <div class="projects"> </div>
                 </div>
             </div>
         </div>
-        <div class="construction">
-        <div>This site is under construction...</div>
-     <div class="project">Till then you can check some of my projects..</div>
-        <div class="list" >
-          <ul>
-            <li><a href="calculator.html">
-             <button class="boox">
-     1) Calculator
+        <div id="aboutMe"></div>
+        <div class="info">
+            <div class="aboutMe">
+                <div class="abt"> About Me </div>
+                <div class="whoAmI">Who Am I?</div>
+            </div>
+            <div class="intro">
+                <div class="me">
+                    <div class="introduction1">
 
-             </button>
-            </a>
-            </li>
-            <li>
-            <a href="GuessingNumber.html">
-              <button class="boox">
-               2) Guessing Number
- 
-              </button>
-            </a>
-            </li>
-          </ul>
+                        <img id="slider" class="image" src="https://i.ibb.co/Wp0BHTK/Pranjit-In-Pranjit.jpg"
+                            alt="Pranjit">
+
+                    </div>
+                    <div class="imageSlider">
+                        <button onclick="prev()">
+                            Previous
+                        </button>
+                        <button style="width: 70px;" onclick="next()">
+                            Next
+                        </button>
+                    </div>
+                </div>
+                <div class="me" id="me">
+                    <div class="introduction2">I am <b>Pranjit Shrestha </b><sup>PS</sup> from a small town
+                        (<b>Khandbari</b>) of
+                        <b> Sankhuwasabha,
+                            Nepal.</b>
+                        I am a full stack developer having the experience in <b>HTML, CSS, JavaScript, SQL, Jquery,
+                            Bootstrap.</b>
+                        I have knowledge in some of the famous programming language like <b> C, PHP, C++,
+                            Python.</b>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectTitle">Some of my Projects</div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="C:\Portfolio\image\Calculator.jpg" alt="Calculator" style="width:100%">
+                            <h3>Calculator</h3>
+                            <p>It is a basic Calculator designed by me by using HTML, CSS & JS. It can perform some of
+                                the basic mathematical operations like addition, subtraction, multiplication,etc.</p>
+                            <a href="calc.html" target="_blank"> <button class="btn">Calculator</button></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="C:\Portfolio\image\topup.jpg" alt="Lights" style="width:100%">
+                            <h3>Topup Website</h3>
+                            <p>It is a simple website where peoples can topup FF diamonds, PUBG UC and TikTok coins. Due
+                                to the lack of database in this sample I have kept only front end so it doesnot work.
+                            </p><br><br>
+
+                            <a href="C:\Portfolio\topup\topup.html" target="_blank"><button
+                                    class="btn">Preview</button></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="C:\Portfolio\image\guessingNumber.jpg" alt="Nature" style="width:100%">
+                            <h3>Guessing number</h3>
+                            <p>It is a game made by me using HTML, CSS & JS(Jquery). Here in this game user have to
+                                guess the
+                                number between 1 to 100. Each time the user plays a new game the value will be changed.
+                                Try playing it now...</p><br>
+                            <a href="guessingNumber.html" target="_blank"> <button class="btn">Play</button></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>It is under construction............. <br><br><br><br><br><br><br><br></p>
+                            <button onclick="validProject()" class="btn" style="cursor:not-allowed;">view</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
-
-    <div class="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="box" id="box4"></div>
-    </div>
 
 
+        <div class="mContainer" id="contact">
+            <div class="contactContainer">
+                <div class="homeIcon">
+
+                    <i class="fa-sharp fa-solid fa-comments" style="font-size:30px;color:white"></i>
+                </div>
+                <div class="box1">
+                    <p>Contact me</p>
+                </div>
+                <form name="myForm" action="https://formspree.io/f/xwkzbgvv" method="POST">
+                    <div class="form" name="myForm">
+
+                        <input class="box" type="text" style="height: 30px" placeholder="Your Name" name="name"
+                            required>
+                        <input class="box" type="email" style="height: 30px" placeholder="Email" name="email" required>
+                        <input type="text" class="box" style="height: 30px" placeholder="Subject" name="subject"
+                            required>
+                        <textarea name="textarea" class="box" cols="5" rows="4" style="resize: none;"
+                            placeholder="Comment" required></textarea>
+                        <input type="submit" class="submit" value="Submit" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="socialMedia">
+                    <div class="connectWithMe">Connect with me:</div>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/pranjeet.shrestha.1" target="_blank"> <i
+                            class="fa-brands fa-square-facebook" style="font-size:34px"></i></a>
+                    <a href="https://www.instagram.com/pranjeet_shrestha/" target="_blank"><i
+                            class="fa-brands fa-square-instagram" style="font-size:34px"></i></a>
+                    <a href="mailto:pranjeetstha555@gmail.com" target="_blank"> <i class="fa-solid fa-square-envelope"
+                            style="font-size:34px"></i></a>
+                    <a href="https://github.com/PranjeetShrestha" target="_blank"> <i class="fa-brands fa-square-github"
+                            style="font-size:34px"></i></a>
+                </div><br>
+                <ol>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ol>
+                <p>&copy All rights reversed</p>
+            </div>
+        </footer>
 
 
 
         <script>
+            /*---------navBar----------*/
             $('#icon1').click(function () {
                 $('#nav1').slideToggle(500)
 
             })
+
+            /*---------imageSlider----------*/
+            var images = [
+                "https://i.ibb.co/Wp0BHTK/Pranjit-In-Pranjit.jpg",
+                " https://i.ibb.co/cwFw5fH/Pranjit.jpg",
+                "https://i.ibb.co/Sx1wdjX/Pranjit-In-Gumba.jpg",
+                " https://i.ibb.co/c8WqjYY/me.jpg"
+            ];
+            var num = 0;
+            function next() {
+                var slider = document.getElementById("slider");
+                num++;
+                if (num >= images.length) {
+                    num = 0;
+                }
+                slider.src = images[num];
+            }
+            function prev() {
+                var slider = document.getElementById("slider");
+                num--;
+                if (num < 0) {
+                    num = images.length - 1;
+                }
+                slider.src = images[num];
+            }
+
+            /*---------scroll----------------*/
+            $(document).ready(function () {
+
+                $("a").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+
+            //----------- valid on click
+            function validProject() {
+                alert("Sorry it is under construction..")
+            }
         </script>
 </body>
 
@@ -443,6 +266,8 @@
 
 
 
+
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -641,4 +466,4 @@ height:50px;
 <body>
     
 </body>
-</html>
+</html> -->
