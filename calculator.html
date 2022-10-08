@@ -2,216 +2,188 @@
 <html>
 
 <head>
-  
-  <title>Calculator</title>
+
+    <title>Calculator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hello everyone welcome to my personal website...">
     <meta property="og:type" content="profile">
     <meta property="og:image" content="img/profile.jpg">
-<link rel="icon" href="img/profile.jpg" >
- <meta name="keywords" content="Pranjit shrestha,Pranjit,Pranjeet shrestha">
-    <meta name=author content="Pranjit Shrestha" >
+    <link rel="icon" href="img/profile.jpg">
+    <meta name="keywords" content="Pranjit shrestha,Pranjit,Pranjeet shrestha">
+    <meta name=author content="Pranjit Shrestha">
 
 </head>
 
 <body>
-  
-  <style>
 
-body{
-  background-color:white;
-  color:black;
-}
- .dark-mode{
-   
-   color: white;
-   background-color :black;
-    
-    
- }
-.fieldset{
-  border:4px solid white;
-}
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
 
-  .f{
-      background-color:#22262254;
-      width:300px;
-      height:575px;
-      border:4px solid black ;
-      border-radius:10px;
-    }
-   .ins{
-     padding-top: 18px;
-   }
-    .result{
-      width:250px;
-      height:70px;
-    }
-    .btn{
-      height:60px;
-      width:60px;
-      border:2px solid black ;
-      border-radius :5px;
-      cursor :wait;
-    }
-   
-    .btn:active{
+        .dark-mode {
+            color: white;
+            background-color: black;
 
-      height:60px;
-      width:60px;
-      background-color:#22262261;
-      color:blue;
-      
-    }
-     .btn1{
-      height:60px;
-      width:125px;
-    }
-   .submit{
-     display:grid;
-     justify-content: center ;
-   }
-   .box{
-     margin :4px;
-     border-radius:4px;
-   }
-  .box:active{
-    color:#9FFF00;
-  }
-  </style>
 
-  <center>
-<fieldset class="f">
-  
-  <div class="ins">
-    <form>
-  <input class="result" id="result" readonly ><br><br>
-  <input type="reset" class="btn" value="AC">
-  
-</form>
- 
-  <button onclick="bra1() " class="btn" >(</button>
-  <button onclick="bra2()" class="btn" >) </button>
-  <button onclick="div()" class="btn" >/</button><br><br>
-    <button onclick="one()" class="btn" >1</button>
-    <button onclick="two() " class="btn" >2</button>
-    <button onclick="three()" class="btn" >3</button>
-    <button onclick="plus()" class="btn" >+</button>
-  <br><br>
-    <button onclick="four() "class="btn" >4</button>
-    <button onclick="five() "class="btn" >5</button>
-    <button onclick="six() "class="btn" >6</button>
-    <button onclick="minus() " class="btn" >-</button>
-  <br><br>
-    <button class="btn" >7</button>
-    <button class="btn" >8</button>
-    <button class="btn" >9</button>
-    <button class="btn" >* </button>
-  <br><br>
-    <button class="btn" >0</button>
-    <button class="btn" >.</button>
-    <button class="btn" >=</button>
-    
- </div>
- 
-</fieldset>
-  </center>
-   <div class="submit">
-  
- <div></div><button  onclick="dark_mode()" class=box>Dark mode</button>
-  </div>
-  </div>
-  <script>
-function dark_mode(){
-    
-    $('body').toggleClass('dark-mode', 'fieldset')
-  }
-  
-  
-      
-  /*
-  function div(){
-    num="/";
-    document.getElementById("result").value=num;
-  }
-  function bra1(){
-    num="(";
-    document.getElementById("result").value=num;
-  }
-  function bra2(){
-    num=") ";
-    document.getElementById("result").value=num;
-  }
-  function one(){
-    num=1;
-    document.getElementById("result").value=num;
-  }
-  function two(){
-    num=2;
-    document.getElementById("result").value=num;
-  }
-  function three(){
-    num=3;
-    document.getElementById("result").value=num;
-  }
-  function plus(){
-    num="+";
-    document.getElementById("result").value=num;
-  }
-  function four(){
-    num=4;
-    document.getElementById("result").value=num;
-  }
-  function five(){
-    num=5;
-    document.getElementById("result").value=num;
-  }
-  function six(){
-    num=6;
-    document.getElementById("result").value=num;
-  }
-  function minus(){
-    num="-";
-    document.getElementById("result").value=num;
-  }
-  function seven(){
-    num=7;
-    document.getElementById("result").value=num;
-  }
-  function eight(){
-    num=8;
-    document.getElementById("result").value=num;
-  }
-  function nine(){
-    num=9;
-    document.getElementById("result").value=num;
-  }
-  function multiply(){
-    num="x";
-    document.getElementById("result").value=num;
-  }
-  */
-  let btns=document.querySelectorAll(".btn");
-let input=document.querySelector("input");
-for(elements of btns){
-    elements.addEventListener("click",(ff)=>{
-      
-       if(ff.target.innerHTML=="="){
-           input.value=eval(input.value)
-       }else if(ff.target.innerHTML=="Ac"){
-           input.value="";
-       }else if(ff.target.innerHTML=='C'){
-           input.value=input.value.substring(0,input.value.length-1);
-      }else{ input.value+=ff.target.innerHTML.trim();
-       } 
-    }) 
-}
+        }
 
-  
-  </script>
+
+
+
+        .f {
+            background-color: #22262254;
+            width: 300px;
+            height: 575px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(22 21 21 / 57%);
+            transition: all 200ms ease-out;
+        }
+
+        .ins {
+            padding-top: 18px;
+
+
+        }
+
+        .result {
+            width: 250px;
+            height: 70px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+        }
+
+        .result:focus {
+            outline: none;
+        }
+
+        .btn {
+            height: 60px;
+            width: 60px;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 10px rgb(22 21 21 / 57%);
+            transition: all 200ms ease-out;
+        }
+
+        .btn:active {
+            height: 60px;
+            width: 60px;
+            background-color: #22262261;
+            color: rgb(122, 17, 170);
+
+        }
+
+        .btn1 {
+            height: 60px;
+            width: 125px;
+        }
+
+        .submit {
+            display: grid;
+            justify-content: center;
+        }
+
+        .box {
+            margin: 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+
+        }
+
+        .box:active {
+
+            color: black;
+            background-color: white;
+        }
+
+        .box:hover {
+            box-shadow: 0 0 10px rgb(22 21 21 / 57%);
+            transition: all 200ms ease-out;
+        }
+    </style>
+
+    <center>
+        <div class="f">
+
+            <div class="ins">
+                <form>
+                    <input class="result" id="result" readonly><br><br>
+                    <input type="reset" class="btn" value="AC">
+
+                </form>
+
+                <button class="btn">(</button>
+                <button class="btn">) </button>
+                <button class="btn">/</button><br><br>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">+</button>
+                <br><br>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">-</button>
+                <br><br>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">* </button>
+                <br><br>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">=</button>
+
+            </div>
+
+        </div>
+    </center>
+    <div class="submit">
+
+        <div></div><button onclick="dark_mode()" class="box">Dark mode</button>
+    </div>
+    </div>
+    <script>
+        function dark_mode() {
+
+            $('body').toggleClass('dark-mode')
+        }
+
+
+
+        let btns = document.querySelectorAll(".btn");
+        let input = document.querySelector("input");
+        for (elements of btns) {
+            elements.addEventListener("click", (ff) => {
+
+                if (ff.target.innerHTML == "=") {
+                    input.value = eval(input.value)
+                } else if (ff.target.innerHTML == "Ac") {
+                    input.value = "";
+                } else if (ff.target.innerHTML == 'C') {
+                    input.value = input.value.substring(0, input.value.length - 1);
+                } else {
+                    input.value += ff.target.innerHTML.trim();
+                }
+            })
+        }
+
+
+    </script>
 </body>
 
 </html>
