@@ -375,7 +375,7 @@ body {
 
 @media screen and (min-width:398px) {
     .devPic img {
-        height: 300px;
+        height: 400px;
 
         width: 32vw;
     }
@@ -389,7 +389,7 @@ body {
 
 @media screen and (min-width:546px) {
     .devPic img {
-        height: 300px;
+        height: 400px;
 
         width: 26vw;
     }
