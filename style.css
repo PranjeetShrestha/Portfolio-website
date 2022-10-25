@@ -46,19 +46,28 @@ body {
 
 }
 
-.infoContainer {
-    height: 75vh;
-    display: flex;
-    justify-content: space-evenly;
+
+.container {
+    width: 100%;
+    height: 75%;
     background-color: rgb(255, 196, 0);
     background-image: linear-gradient(to right, rgb(185, 9, 255), #ff8800);
 }
+
 
 .devInfo {
     z-index: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10%;
+
+}
+
+@media screen and (max-width:767px) {
+    .devInfo {
+        margin-top: 0;
+    }
 }
 
 .devPic img {
