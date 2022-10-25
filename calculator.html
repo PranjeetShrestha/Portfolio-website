@@ -114,10 +114,88 @@
             box-shadow: 0 0 10px rgb(22 21 21 / 57%);
             transition: all 200ms ease-out;
         }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            float: right;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .panelBorderColor {
+            border-color: rgb(255, 255, 255);
+
+        }
+
+        ul li {
+            border: 2px solid black;
+            list-style: none;
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .darkModeText {
+            margin-left: 8px;
+        }
     </style>
 
     <center>
-        <div class="f">
+        <div class="f  white_border">
 
             <div class="ins">
                 <form>
@@ -154,14 +232,25 @@
     </center>
     <div class="submit">
 
-        <div></div><button onclick="dark_mode()" class="box">Dark mode</button>
+        <div>
+        </div>
+        <ul>
+
+            <li class="white_border">
+                <span class="darkModeText">
+                    Dark Mode
+                </span>
+                <label class="switch">
+                    <input onclick="myFunction()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </ul>
+
     </div>
     </div>
     <script>
-        function dark_mode() {
 
-            $('body').toggleClass('dark-mode')
-        }
 
 
 
@@ -182,7 +271,11 @@
             })
         }
 
-
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            $(".white_border").toggleClass("panelBorderColor");
+        }
     </script>
 </body>
 
