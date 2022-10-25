@@ -43,7 +43,7 @@ body {
 
 .balance {
     color: rgba(137, 43, 226, 0.89);
-
+    visibility: hidden;
 }
 
 .container {
@@ -71,8 +71,8 @@ body {
 }
 
 .devPic img {
-    height: 70vh;
-    width: 40vw;
+    height: 300px;
+    width: 150px;
 }
 
 .hello {
@@ -375,7 +375,8 @@ body {
 
 @media screen and (min-width:398px) {
     .devPic img {
-        height: 70vh;
+        height: 300px;
+
         width: 32vw;
     }
 
@@ -388,7 +389,8 @@ body {
 
 @media screen and (min-width:546px) {
     .devPic img {
-        height: 70vh;
+        height: 300px;
+
         width: 26vw;
     }
 
@@ -410,7 +412,7 @@ body {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .nav {
         background-color: rgba(137, 43, 226, 0.89);
         position: fixed;
@@ -542,7 +544,8 @@ body {
     }
 
     .devPic img {
-        height: 70vh;
+        height: 400px;
+
         width: 22vw;
     }
 
@@ -563,7 +566,8 @@ body {
 
 @media screen and (min-width:1024px) {
     .devPic img {
-        height: 70vh;
+        height: 400px;
+
         width: 15vw;
     }
 
